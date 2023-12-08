@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Validator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <input
+        type="password"
+        placeholder="Enter your password"
+        v-model="password"
+      />
+      <p v-if="showErrorMessage" class="error">{{ errorMessage }}</p>
+      <p v-else class="success">{{ successMessage }}</p>
+    </div>
+    <!-- VueJS CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
